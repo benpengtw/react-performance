@@ -3,7 +3,7 @@
 // http://localhost:3000/isolated/final/01.extra-1.js
 
 import * as React from 'react'
-
+// 💰 Hint: it doesn't matter how many times you call import('./path-to-module'), webpack will only actually load the module once.
 const loadGlobe = () => import('../globe')
 const Globe = React.lazy(loadGlobe)
 
@@ -23,6 +23,7 @@ function App() {
     >
       <label
         style={{marginBottom: '1rem'}}
+        // 提早 load
         onMouseEnter={loadGlobe}
         onFocus={loadGlobe}
       >
