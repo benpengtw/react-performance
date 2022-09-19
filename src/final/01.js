@@ -1,6 +1,7 @@
 // Code splitting
 // http://localhost:3000/isolated/final/01.js
-
+// React效能 - 用lazy和Suspense來動態載入元件
+// https://ithelp.ithome.com.tw/articles/10251342
 import * as React from 'react'
 
 const Globe = React.lazy(() => import('../globe'))
